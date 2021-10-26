@@ -6,7 +6,7 @@ const Home = ({ user }) => {
       <div>Hello {user}</div>
       <div>
         {numbers.map((num) => (
-          <li>{num * 2}</li>
+          <li key={num.toString()}>{num * 2}</li>
         ))}
       </div>
     </>
