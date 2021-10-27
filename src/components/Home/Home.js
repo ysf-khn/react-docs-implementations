@@ -1,8 +1,11 @@
+import Calculator from "../Calculator/Calculator";
+
 const Home = ({ user }) => {
   const numbers = [1, 2, 3, 4, 5];
 
   return (
     <>
+      <Calculator />
       <div>Hello {user}</div>
       <div>
         {numbers.map((num) => (

@@ -22,9 +22,14 @@ const Form = () => {
       <form onSubmit={alertUser}>
         <label> Name :</label>
         <input type="text" value={value} onChange={handleChange} />
-        <input type="submit" value="Submit" onClick={alertUser} />
+        {/* <input type="submit" value="Submit" onClick={alertUser} /> */}
         <textarea value={text} onChange={logValue} />
         <div>{text}</div>
+        <select multiple={true} value={["B", "D"]}>
+          <option value="B">Bee</option>
+          <option value="C">See</option>
+          <option value="D">Sad</option>
+        </select>
       </form>
     </>
   );
