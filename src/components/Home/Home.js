@@ -1,24 +1,25 @@
 import { useState } from "react";
+import FetchRandomUser from "../FetchRandomUser";
 
-import Calculator from "../Calculator/Calculator";
-import Counter from "../Counter";
+// import Calculator from "../Calculator/Calculator";
+// import Counter from "../Counter";
 
 const Home = ({ user }) => {
-  const numbers = [1, 2, 3, 4, 5];
+  // const numbers = [1, 2, 3, 4, 5];
 
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  const incrementHandler = () => {
-    setCount(count + 1);
-  };
+  // const incrementHandler = () => {
+  //   setCount(count + 1);
+  // };
 
-  const decrementHandler = () => {
-    setCount(count - 1);
-  };
+  // const decrementHandler = () => {
+  //   setCount(count - 1);
+  // };
 
   return (
     <>
-      <Calculator />
+      {/* <Calculator />
       <div>Hello {user}</div>
       <div>
         {numbers.map((num) => (
@@ -26,7 +27,8 @@ const Home = ({ user }) => {
         ))}
       </div>
       <Counter count={count} inc={incrementHandler} dec={decrementHandler} />
-      <Counter count={count} inc={incrementHandler} dec={decrementHandler} />
+      <Counter count={count} inc={incrementHandler} dec={decrementHandler} /> */}
+      <FetchRandomUser />
     </>
   );
 };
