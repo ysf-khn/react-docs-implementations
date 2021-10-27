@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import TempInput from "../TempInput";
 
 const Calculator = () => {

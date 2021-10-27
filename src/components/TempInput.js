@@ -13,6 +13,14 @@ const TempInput = (props) => {
     setTemp(e.target.value);
   };
 
+  const toCelsius = (fahrenheit) => {
+    return ((fahrenheit - 32) * 5) / 9;
+  };
+
+  const toFahrenheit = (celsius) => {
+    return (celsius * 9) / 5 + 32;
+  };
+
   return (
     <fieldset>
       <legend>Enter temp in {scaleNames[props.scale]}</legend>
